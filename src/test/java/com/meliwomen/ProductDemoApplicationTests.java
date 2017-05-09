@@ -1,4 +1,4 @@
-package com.mercadolivre;
+package com.meliwomen;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

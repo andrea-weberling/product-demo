@@ -1,0 +1,8 @@
+
+dataSources:
+    dataSource:
+        jdbcUrl: jdbc:mysql://localhost:3306/meliwomen
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        driverClassName: com.mysql.jdbc.Driver
+        username: root
+        dbCreate: 'update'
