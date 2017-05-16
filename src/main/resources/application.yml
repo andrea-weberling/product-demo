@@ -1,8 +1,14 @@
 
-dataSources:
-    dataSource:
-        jdbcUrl: jdbc:mysql://localhost:3306/meliwomen
-        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-        driverClassName: com.mysql.jdbc.Driver
-        username: root
-        dbCreate: 'update'
+dataSource:
+    jdbcUrl: jdbc:mysql://localhost:3306/meliwomen
+    dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    driverClassName: com.mysql.jdbc.Driver
+    username: root
+    password: '123456'
+    dbCreate: 'update'
+    showSql: true
+    packagesToScan: meliwomen
+
+spring:
+    jmx:
+        enabled: false

@@ -1,21 +1,17 @@
 package com.meliwomen.dao;
 
 import com.meliwomen.domain.Product;
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
 
 /**
  * Created by weberling on 5/8/17.
  */
 @Repository
-public class ProductDao {
+@javax.transaction.Transactional
+public interface ProductDao extends CrudRepository<Product, Long> {
 
-    @PersistenceContext
-    private EntityManager manager;
+    public Product findById(int id);
 
-    public void save(Product product){
-        manager.persist(product);
-    }
 }

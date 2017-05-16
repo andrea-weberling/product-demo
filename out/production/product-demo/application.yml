@@ -5,4 +5,12 @@ dataSources:
         dialect: org.hibernate.dialect.MySQL5InnoDBDialect
         driverClassName: com.mysql.jdbc.Driver
         username: root
+        password: '123456'
         dbCreate: 'update'
+spring:
+    jmx:
+        enabled: false
+    autoconfigure:
+        exclude:
+            - org.springframework.boot.autoconfigure.session.SessionAutoConfiguration
+            - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
